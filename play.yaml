@@ -16,3 +16,5 @@
       script : hello.sh
     - name : Execute command 'Date'
       command: date
+    - name : Copy website to slave2
+      copy : src=/home/ubuntu/sports/ dest=/var/www/html
