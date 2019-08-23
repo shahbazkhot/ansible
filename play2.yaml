@@ -1,0 +1,9 @@
+---
+  - hosts: slave2
+    sudo : yes
+    name : play2
+    tasks:
+     - name : Install Apache2 webser
+       apt  : name=apache2 state=latest
+     - name : Copy website to slave2
+       copy : src=/home/ubuntu/sports/ dest=/var/www/html
