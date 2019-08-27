@@ -6,4 +6,4 @@
     - name: Install nginx
       apt : name=nginx state=latest
     - name: Copy website to slave2
-      copy: src=/home/ubuntu/sports/ dest=/var/www/html owner=root group=root mode=0644
+      copy: src=/home/ubuntu/sports/  dest=/var/www/html  owner=root  group=root  mode=0644
