@@ -1,0 +1,8 @@
+---
+ - hosts: slave1
+   sudo : yes
+   name : play1
+   tasks:
+    - name: Update Python3
+      apt : name=python3 state=latest
+      
